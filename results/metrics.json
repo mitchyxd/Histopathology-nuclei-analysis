@@ -1,0 +1,48 @@
+{
+  "cohort": {
+    "n_fields": 20,
+    "image_size": 512,
+    "n_train_fields": 12,
+    "n_test_fields": 8,
+    "total_nuclei": 2134
+  },
+  "tuned_hyperparameters": {
+    "classical_background_sigma": 15.0,
+    "classical_min_distance": 11,
+    "classical_train_aji": 0.5196219952555854,
+    "ml_interior_thr": 0.8,
+    "ml_train_aji": 0.6774230216340964
+  },
+  "segmentation": {
+    "classical": {
+      "dice": 0.8312865122438924,
+      "iou": 0.716078179704702,
+      "aji": 0.5237753535568193,
+      "f1_at_50": 0.706156412211795,
+      "mean_f1": 0.46754876760969244,
+      "count_error_pct": -13.472500140353226
+    },
+    "ml": {
+      "dice": 0.9377582746163997,
+      "iou": 0.8833615492137188,
+      "aji": 0.6449253009379419,
+      "f1_at_50": 0.8426536917430612,
+      "mean_f1": 0.6142768089462987,
+      "count_error_pct": 2.6705560049376453
+    }
+  },
+  "pleomorphism_classification": {
+    "auroc": 0.9609366309466425,
+    "accuracy": 0.8850432632880099,
+    "malignant_recall": 0.8011049723756906,
+    "malignant_precision": 0.932475884244373,
+    "benign_recall": 0.9530201342281879,
+    "n_train_nuclei": 1296,
+    "n_test_nuclei": 809
+  },
+  "field_grading": {
+    "pearson_r": 0.9345867906176563,
+    "mean_abs_error": 0.04892195755483371
+  },
+  "runtime_s": 179.2
+}
